@@ -17,61 +17,32 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.green,
       body: SafeArea(
         child:Container(
-          child: Column(
+          child: Row(
+
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
-
-                crossAxisAlignment: CrossAxisAlignment.stretch,          children: <Widget>[
-                Container(
-                  height: 200.0,
-                  padding: EdgeInsets.all(30.0),
-                  color: Colors.white,
-                  child: Text('cool'),
-                ),
-                SizedBox(height: 20.0),
-                Container(
-                  height: 200.0,
-                  padding: EdgeInsets.all(30.0),
-                  color: Colors.white,
-                  child: Text('cool'),
-                ),
-                SizedBox(height: 20.0),
-
-                Container(
-                  height: 200.0,
-                  padding: EdgeInsets.all(30.0),
-                  color: Colors.white,
-                  child: Text('cool'),
-                ),
-
-              ],
+              Container(
+                color: Colors.red,
+                width: 100.0,
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    height: 200.0,
-                    padding: EdgeInsets.all(30.0),
-                    color: Colors.red,
-                    child: Text('cool'),
-                  ),
-                  SizedBox(width: 20.0),
-                  Container(
-                    height: 200.0,
-                    padding: EdgeInsets.all(30.0),
-                    color: Colors.yellow,
-                    child: Text('cool'),
-                  ),
-                  SizedBox(width: 20.0),
-                  Container(
-                    height: 200.0,
-                    padding: EdgeInsets.all(30.0),
-                    color: Colors.yellow,
-                    child: Text('cool'),
-                  ),
+              Container(
+                color: Colors.green,
+                width: double.infinity,
+                alignment: Alignment.center,
 
-                ],
-              )
+                child: Container(
+                  height: 200.0,
+                  width: 200.0,
+                  color: Colors.yellow,
+                ),
+              ),
+
+              Container(
+                color: Colors.red,
+                width: 100.0,
+
+              ),
             ],
           ),
         )
