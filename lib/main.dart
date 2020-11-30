@@ -17,34 +17,16 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.green,
       body: SafeArea(
         child:Container(
-          child: Row(
-
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child:Column(
             children: [
-              Container(
-                color: Colors.red,
-                width: 100.0,
+              CircleAvatar(
+                radius: 50.9,
+                backgroundImage: AssetImage('images/img.png'),
               ),
-              Container(
-                color: Colors.green,
-                width: double.infinity,
-                alignment: Alignment.center,
-
-                child: Container(
-                  height: 200.0,
-                  width: 200.0,
-                  color: Colors.yellow,
-                ),
-              ),
-
-              Container(
-                color: Colors.red,
-                width: 100.0,
-
-              ),
+              Text('mohamed sultan',
+                style: TextStyle(fontFamily: 'Pacifico',color: Colors.white,fontSize: 40.0,fontWeight: FontWeight.bold))
             ],
-          ),
+          )
         )
 
       ),
