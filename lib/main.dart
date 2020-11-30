@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.amber,
-      ),
-    )
+      MyApp()
   );
 }
 
@@ -17,7 +13,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     home: Scaffold(
       backgroundColor: Colors.green,
-      body: Container(),
+      body: SafeArea(
+        child: Container(
+          height: 200.0,
+          width: 300.0,
+          padding: EdgeInsets.all(30.0),
+          margin: EdgeInsets.only(left: 30.0),
+          color: Colors.white,
+          child: Text('cool'),
+        ),
+      ),
     ),
     );
   }
